@@ -1,9 +1,14 @@
+using Microsoft.EntityFrameworkCore; // from istalled new package
+using MVC_SellingObjectsApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
 
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("DefaultConnection") // it will connect ot the server
+    ));
 
 var app = builder.Build();
 
