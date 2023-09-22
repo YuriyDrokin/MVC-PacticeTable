@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MVC-SellingObjectsApp.bundle.scp.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

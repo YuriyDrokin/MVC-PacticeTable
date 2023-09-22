@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HS+TxDFoppanCGtL1Kwa2o/L71IT8KwPc5VeiyfVMJY=",
+  "Hash": "6i/bx0y8E0nP2vR0xQnJobPjHGqLAdLoA6cDsiuIW/w=",
   "Source": "MVC-SellingObjectsApp",
   "BasePath": "_content/MVC-SellingObjectsApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC-SellingObjectsApp.bundle.scp.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "MVC-SellingObjectsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\wwwroot\\",
+      "BasePath": "_content/MVC-SellingObjectsApp",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\GitHub\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\MVC-SellingObjectsApp\\wwwroot\\css\\site.css",
