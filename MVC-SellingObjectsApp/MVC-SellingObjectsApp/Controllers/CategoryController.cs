@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_SellingObjectsApp.Data;
+using MVC_SellingObjectsApp.Models;
 
 namespace MVC_SellingObjectsApp.Controllers
 {
@@ -16,8 +17,8 @@ namespace MVC_SellingObjectsApp.Controllers
 
         public IActionResult Index()
         {
-            var objCategoryList = _db.Categories.ToList(); // accessing to db set and converting to a list and store in ObjCategoryList, no need sql statements 
-            return View();
+            IEnumerable<Category> objCategoryList = _db.Categories; // accessing to db set and converting to a list and store in ObjCategoryList, no need sql statements 
+            return View(objCategoryList);
         }
     }
 }
