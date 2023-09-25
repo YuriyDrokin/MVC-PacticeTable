@@ -20,5 +20,10 @@ namespace MVC_SellingObjectsApp.Controllers
             IEnumerable<Category> objCategoryList = _db.Categories; // accessing to db set and converting to a list and store in ObjCategoryList, no need sql statements 
             return View(objCategoryList);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

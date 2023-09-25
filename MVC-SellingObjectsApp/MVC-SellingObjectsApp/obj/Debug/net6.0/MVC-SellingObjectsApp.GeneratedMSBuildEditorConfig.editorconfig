@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = \\Mac\Home\Documents\GitHub\MVC-SellingObjectsApp\MVC-SellingObjectsApp\MVC-SellingObjectsApp
 build_property._RazorSourceGeneratorDebug = 
 
+[//Mac/Home/Documents/GitHub/MVC-SellingObjectsApp/MVC-SellingObjectsApp/MVC-SellingObjectsApp/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [//Mac/Home/Documents/GitHub/MVC-SellingObjectsApp/MVC-SellingObjectsApp/MVC-SellingObjectsApp/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
