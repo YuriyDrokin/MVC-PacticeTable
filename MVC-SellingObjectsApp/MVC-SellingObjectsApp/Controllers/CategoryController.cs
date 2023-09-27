@@ -30,6 +30,12 @@ namespace MVC_SellingObjectsApp.Controllers
         [ValidateAntiForgeryToken] // cross site request forgery and AntoForgery token
         public IActionResult Create(Category obj)
         {
+            // Validation for entering same name and Validorder value
+            if(obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("name", "The DisplayOrder cannot MATCH the Name");
+            }
+
             if(ModelState.IsValid) { // check validation
             _db.Categories.Add(obj); // creating record in database just addin into database
             _db.SaveChanges();// that will push into database when we save all the changes
