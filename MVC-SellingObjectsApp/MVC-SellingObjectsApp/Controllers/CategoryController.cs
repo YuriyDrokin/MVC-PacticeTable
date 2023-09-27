@@ -80,5 +80,40 @@ namespace MVC_SellingObjectsApp.Controllers
             }
             return View(obj);
         }
+        // Delete
+        //GET
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var categoryFromDb = _db.Categories.Find(id);
+            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u=>u.Id == id);
+            //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
+
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+
+            return View(categoryFromDb);
+        }
+        //POST
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken] // cross site request forgery and AntoForgery token
+        public IActionResult DeletePOST(int? id)
+        {
+            var obj = _db.Categories.Find(id);
+            if(obj == null) {
+            return NotFound();
+            }
+            
+                _db.Categories.Remove(obj); // update record in database just updates into database
+                _db.SaveChanges();// that will push into database when we save all the changes
+                return RedirectToAction("Index"); // redirecto to index page to what happened 
+            
+           
+        }
     }
 }
