@@ -39,6 +39,7 @@ namespace MVC_SellingObjectsApp.Controllers
             if(ModelState.IsValid) { // check validation
             _db.Categories.Add(obj); // creating record in database just addin into database
             _db.SaveChanges();// that will push into database when we save all the changes
+             TempData["success"] = "Category Created Succesfully"; // notify User about Update
             return RedirectToAction("Index"); // redirecto to index page to what happened 
             }
             return View(obj);
@@ -76,6 +77,7 @@ namespace MVC_SellingObjectsApp.Controllers
             { // check validation
                 _db.Categories.Update(obj); // update record in database just updates into database
                 _db.SaveChanges();// that will push into database when we save all the changes
+                TempData["success"] = "Category Update Succesfully"; // notify User about Update
                 return RedirectToAction("Index"); // redirecto to index page to what happened 
             }
             return View(obj);
@@ -111,7 +113,8 @@ namespace MVC_SellingObjectsApp.Controllers
             
                 _db.Categories.Remove(obj); // update record in database just updates into database
                 _db.SaveChanges();// that will push into database when we save all the changes
-                return RedirectToAction("Index"); // redirecto to index page to what happened 
+            TempData["success"] = "Category Deleted Succesfully"; // notify User about Update
+            return RedirectToAction("Index"); // redirecto to index page to what happened 
             
            
         }
