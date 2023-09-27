@@ -30,7 +30,7 @@ namespace MVC_SellingObjectsApp.Controllers
         [ValidateAntiForgeryToken] // cross site request forgery and AntoForgery token
         public IActionResult Create(Category obj)
         {
-            if(ModelState.IsValid) { 
+            if(ModelState.IsValid) { // check validation
             _db.Categories.Add(obj); // creating record in database just addin into database
             _db.SaveChanges();// that will push into database when we save all the changes
             return RedirectToAction("Index"); // redirecto to index page to what happened 
